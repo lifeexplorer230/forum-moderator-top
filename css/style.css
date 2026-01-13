@@ -315,12 +315,12 @@ body {
 .goal-card {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 16px;
     padding: 24px 28px;
     border-radius: var(--border-radius-md);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
+    line-height: 32px;
     color: var(--color-text-primary);
     box-shadow: var(--shadow-sm);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -362,7 +362,7 @@ body {
 
 .goal-text {
     flex: 1;
-    text-align: center;
+    text-align: left;
 }
 
 /* ========================================
@@ -1609,7 +1609,8 @@ body {
 
     .goal-card {
         padding: 18px 20px;
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 28px;
     }
 
     .goal-icon {
