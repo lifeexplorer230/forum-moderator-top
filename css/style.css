@@ -170,7 +170,7 @@ body {
 
 .hero {
     background-color: var(--color-bg-primary);
-    padding: 120px 0 100px 0;
+    padding: 30px 0 25px 0;
 }
 
 .hero-content {
@@ -299,7 +299,7 @@ body {
 
 .goals-section {
     background-color: var(--color-bg-primary);
-    padding: 0 0 80px 0;
+    padding: 0 0 20px 0;
 }
 
 .goals-grid {
@@ -371,7 +371,7 @@ body {
 
 .colored-heading-section {
     background-color: var(--color-bg-primary);
-    padding: 80px 0 40px 0;
+    padding: 40px 0 20px 0;
 }
 
 .colored-heading {
@@ -473,7 +473,7 @@ body {
 
 .support-text-section {
     background-color: var(--color-bg-primary);
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .support-text {
@@ -494,7 +494,7 @@ body {
 
 .button-section {
     background-color: var(--color-bg-primary);
-    padding: 0 0 40px 0;
+    padding: 0 0 20px 0;
 }
 
 /* ========================================
@@ -502,7 +502,7 @@ body {
    ======================================== */
 
 .testimonial-section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .testimonial-section--light {
@@ -590,7 +590,7 @@ body {
 
 .statement-section {
     background-color: var(--color-bg-primary);
-    padding: 80px 0 40px 0;
+    padding: 40px 0 20px 0;
 }
 
 .statement-heading {
@@ -606,7 +606,7 @@ body {
 
 .benefits-section {
     background-color: var(--color-bg-primary);
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .section-title {
@@ -648,7 +648,7 @@ body {
 
 .moderators-section {
     background-color: var(--color-bg-primary);
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .moderators-description {
@@ -695,7 +695,7 @@ body {
 
 .meetings-section {
     background-color: var(--color-bg-primary);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .meetings-list {
@@ -756,7 +756,7 @@ body {
 
 .image-placeholder-section {
     background-color: var(--color-bg-primary);
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .image-placeholder {
@@ -777,7 +777,7 @@ body {
 
 .topics-section {
     background-color: var(--color-bg-primary);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .topics-list {
@@ -820,7 +820,7 @@ body {
 
 .anti-topics-section {
     background-color: var(--color-bg-primary);
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .anti-topics-list {
@@ -863,7 +863,7 @@ body {
 
 .extras-section {
     background-color: var(--color-bg-primary);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .extras-grid {
@@ -914,7 +914,7 @@ body {
 
 .important-section {
     background-color: var(--color-bg-primary);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .important-list {
@@ -956,7 +956,7 @@ body {
 
 .note-section {
     background-color: var(--color-bg-primary);
-    padding: 0 0 40px 0;
+    padding: 0 0 20px 0;
 }
 
 /* ========================================
@@ -965,7 +965,7 @@ body {
 
 .next-steps-section {
     background-color: var(--color-bg-primary);
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .next-steps-subtitle {
@@ -996,7 +996,7 @@ body {
 
 .steps-section {
     background-color: var(--color-bg-primary);
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .step {
@@ -1077,7 +1077,7 @@ body {
 
 .cta-section {
     background-color: var(--color-bg-secondary);
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .cta-content {
@@ -1112,7 +1112,7 @@ body {
 
 .pricing-section {
     background-color: var(--color-bg-primary);
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .pricing-description {
@@ -1207,7 +1207,7 @@ body {
 
 .included-section {
     background-color: var(--color-bg-primary);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .included-list {
@@ -1252,7 +1252,7 @@ body {
 
 .faq-section {
     background-color: var(--color-bg-primary);
-    padding: 80px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -1351,7 +1351,7 @@ body {
 
 .footer {
     background-color: var(--color-bg-secondary);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .footer-content {
@@ -1418,12 +1418,12 @@ body {
     }
 
     .hero {
-        padding: 60px 0 50px 0;
+        padding: 30px 0 25px 0;
     }
 
     /* Базовый spacing для секций на мобильных */
     section {
-        padding: 60px 0;
+        padding: 30px 0;
     }
 
     body {
@@ -1460,7 +1460,7 @@ body {
     }
 
     .goals-section {
-        padding: 0 0 40px 0;
+        padding: 0 0 20px 0;
     }
 
     .colored-heading {
@@ -1468,7 +1468,7 @@ body {
     }
 
     .colored-heading-section {
-        padding: 60px 0 30px 0;
+        padding: 30px 0 15px 0;
     }
 
     .section-title {
@@ -1510,7 +1510,7 @@ body {
     }
 
     .meetings-section {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .meeting-card {
@@ -1518,15 +1518,15 @@ body {
     }
 
     .extras-section {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .important-section {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .next-steps-section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .next-steps-subtitle {
@@ -1534,7 +1534,7 @@ body {
     }
 
     .steps-section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .step {
@@ -1557,7 +1557,7 @@ body {
     }
 
     .pricing-section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .pricing-badge {
@@ -1572,7 +1572,7 @@ body {
     }
 
     .included-section {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     .included-item {
@@ -1580,11 +1580,11 @@ body {
     }
 
     .faq-section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .footer {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 }
 
