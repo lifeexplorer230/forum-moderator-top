@@ -253,6 +253,12 @@ body {
     transform: translateY(-1px);
 }
 
+.btn-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btn-action {
     background-color: var(--color-pastel-pink);
     color: var(--color-text-primary);
