@@ -442,11 +442,41 @@ body {
     border-radius: 50%;
     border: 2px solid var(--color-bg-primary);
     background: linear-gradient(135deg, #ddd, #aaa);
+    background-size: cover;
+    background-position: center;
     margin-left: -12px;
 }
 
 .avatar:first-child {
     margin-left: 0;
+}
+
+.avatar-1 {
+    background-image: url('../images/avatar1.jpg');
+}
+
+.avatar-2 {
+    background-image: url('../images/avatar2.jpg');
+}
+
+.avatar-3 {
+    background-image: url('../images/avatar3.jpg');
+}
+
+.avatar-4 {
+    background-image: url('../images/avatar4.jpg');
+}
+
+.avatar-5 {
+    background-image: url('../images/avatar5.jpg');
+}
+
+.avatar-6 {
+    background-image: url('../images/avatar6.jpg');
+}
+
+.avatar-7 {
+    background-image: url('../images/avatar7.jpg');
 }
 
 .rating-stars {
