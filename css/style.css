@@ -305,7 +305,7 @@ body {
 .goals-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 8px;
     margin-top: 0;
     max-width: 800px;
     margin-left: auto;
