@@ -304,17 +304,12 @@ body {
 
 .goals-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
     margin-top: 0;
-}
-
-/* Desktop: 4 колонки в ряд */
-@media (min-width: 1024px) {
-    .goals-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .goal-card {
