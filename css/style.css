@@ -695,7 +695,10 @@ body {
 }
 
 .moderator-card {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 600px;
 }
 
 .moderator-photo {
@@ -703,13 +706,18 @@ body {
     height: 220px;
     border-radius: 50%;
     background: linear-gradient(135deg, #ddd, #aaa);
-    margin: 0 auto 16px;
+    flex-shrink: 0;
 }
 
 .moderator-photo--roman {
     background-image: url('../images/photo.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.moderator-info {
+    text-align: left;
+    flex: 1;
 }
 
 .moderator-name {
@@ -1690,9 +1698,18 @@ body {
         font-size: 16px;
     }
 
+    .moderator-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .moderator-photo {
         width: 160px;
         height: 160px;
+    }
+
+    .moderator-info {
+        text-align: center;
     }
 
     .moderator-name {
