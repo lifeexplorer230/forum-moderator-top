@@ -620,6 +620,12 @@ body {
     background: linear-gradient(135deg, #ddd, #aaa);
 }
 
+.testimonial-avatar--oscar {
+    background-image: url('../images/oscar_hartmann.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 /* ========================================
    БЛОК 9: ЗАГОЛОВОК "ФОРУМ-ГРУППА — ЭТО..."
    ======================================== */
