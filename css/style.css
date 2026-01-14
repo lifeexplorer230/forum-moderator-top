@@ -1222,9 +1222,9 @@ body {
 .step {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .step:last-child {
@@ -1767,7 +1767,7 @@ body {
     }
 
     .step {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
     .cta-content {
