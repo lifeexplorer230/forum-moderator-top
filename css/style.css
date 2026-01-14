@@ -634,6 +634,12 @@ body {
     background-color: #fff;
 }
 
+.testimonial-avatar--napoleon {
+    background-image: url('https://static.yakaboo.ua/media/entity/author/1/_/1_4_15.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .testimonial-link {
     color: #2563eb;
     text-decoration: underline;
