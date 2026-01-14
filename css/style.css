@@ -2269,19 +2269,64 @@ body.debug-mode [data-block]:hover::after {
     background-color: var(--color-bg-secondary);
 }
 
-.video-circles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 30px;
-    justify-items: center;
-    max-width: 900px;
+/* Video Slider */
+.video-slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
+.video-slider__track {
+    flex: 1;
+    overflow: hidden;
+}
+
+.video-slider__slides {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.4s ease;
+}
+
+.video-slider__arrow {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.video-slider__arrow:hover {
+    background: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+.video-slider__arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.video-slider__arrow:disabled:hover {
+    background: #fff;
+    border-color: #ddd;
+    color: #333;
+}
+
+/* Video Circle */
 .video-circle {
     position: relative;
     width: 180px;
     height: 180px;
+    min-width: 180px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
@@ -2333,16 +2378,25 @@ body.debug-mode [data-block]:hover::after {
     transform: translate(-50%, -50%) scale(0.5);
 }
 
-/* Mobile styles */
+/* Mobile styles for video slider */
 @media (max-width: 768px) {
-    .video-circles-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .video-slider {
+        gap: 10px;
+    }
+
+    .video-slider__slides {
+        gap: 16px;
+    }
+
+    .video-slider__arrow {
+        width: 40px;
+        height: 40px;
     }
 
     .video-circle {
         width: 140px;
         height: 140px;
+        min-width: 140px;
     }
 
     .video-circle__play {
@@ -2358,14 +2412,19 @@ body.debug-mode [data-block]:hover::after {
 }
 
 @media (max-width: 480px) {
-    .video-circles-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+    .video-slider__arrow {
+        width: 36px;
+        height: 36px;
+    }
+
+    .video-slider__slides {
+        gap: 12px;
     }
 
     .video-circle {
         width: 120px;
         height: 120px;
+        min-width: 120px;
     }
 }
 

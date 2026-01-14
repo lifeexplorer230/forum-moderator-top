@@ -514,69 +514,85 @@
         <div class="container container--wide">
             <h2 class="section-title">Видео-отзывы участников</h2>
 
-            <div class="video-circles-grid">
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
+            <div class="video-slider">
+                <button class="video-slider__arrow video-slider__arrow--left" aria-label="Назад">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="video-slider__track">
+                    <div class="video-slider__slides">
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video3.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video4.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video5.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video6.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video7.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video8.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+
+                        <div class="video-circle">
+                            <video class="video-circle__video" playsinline muted loop>
+                                <source src="Video/video9.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-circle__play"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video2.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
-
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video3.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
-
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video4.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
-
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video5.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
-
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video6.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
-
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video7.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
-
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video8.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
-
-                <div class="video-circle">
-                    <video class="video-circle__video" playsinline muted loop>
-                        <source src="Video/video9.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-circle__play"></div>
-                </div>
+                <button class="video-slider__arrow video-slider__arrow--right" aria-label="Вперёд">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
