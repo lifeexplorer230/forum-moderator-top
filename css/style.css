@@ -1462,18 +1462,15 @@ body {
     font-weight: 500;
     color: var(--color-text-primary);
     line-height: 1.6;
-    padding-left: 28px;
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
     margin-bottom: 18px;
 }
 
-.included-item::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--color-accent-green);
-    font-weight: 700;
-    font-size: 20px;
+.included-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 
 .included-item:last-child {
