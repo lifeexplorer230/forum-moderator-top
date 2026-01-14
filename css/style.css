@@ -1034,9 +1034,23 @@ body {
 .extra-illustration {
     width: 100%;
     height: 200px;
-    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--border-radius-md);
     margin-bottom: 20px;
+}
+
+.extra-illustration--meetings {
+    background-image: url('../images/illustration_meetings.png');
+}
+
+.extra-illustration--support {
+    background-image: url('../images/illustration_support.png');
+}
+
+.extra-illustration--buddy {
+    background-image: url('../images/illustration_buddy.png');
 }
 
 .extra-title {
@@ -1259,14 +1273,20 @@ body {
 .step-placeholder {
     width: 100%;
     height: 300px;
-    background-color: #e8e8e8;
+    background-image: url('../images/illustration_form.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--border-radius-md);
 }
 
 .step-illustration {
     width: 100%;
     height: 300px;
-    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    background-image: url('../images/illustration_payment.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--border-radius-md);
 }
 
@@ -1274,7 +1294,9 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ddd, #aaa);
+    background-image: url('../images/illustration_videocall.png');
+    background-size: cover;
+    background-position: center;
 }
 
 /* ========================================
