@@ -243,14 +243,21 @@ body {
 .btn-secondary {
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
-    border: 1px solid #e5e7eb;
-    padding: 12px 24px;
-    font-size: 15px;
+    border: 3px solid var(--color-accent-pink);
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background-color: var(--color-bg-secondary);
-    transform: translateY(-1px);
+    background-color: var(--color-accent-pink);
+    color: white;
+    border-color: var(--color-accent-pink);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(236, 72, 153, 0.4);
 }
 
 .btn-center {
