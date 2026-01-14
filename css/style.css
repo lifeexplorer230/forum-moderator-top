@@ -467,6 +467,8 @@ body {
 
 .avatar-1 {
     background-image: url('../images/avatar1.jpg');
+    background-size: 160%;
+    background-position: 48% 25%;
 }
 
 .avatar-2 {
@@ -642,8 +644,8 @@ body {
 
 .testimonial-avatar--oscar {
     background-image: url('../images/oscar_hartmann.jpg');
-    background-size: cover;
-    background-position: 35% center;
+    background-size: 140%;
+    background-position: 75% 45%;
 }
 
 .testimonial-avatar--chief {
@@ -657,7 +659,7 @@ body {
 .testimonial-avatar--napoleon {
     background-image: url('https://static.yakaboo.ua/media/entity/author/1/_/1_4_15.jpg');
     background-size: cover;
-    background-position: 55% 25%;
+    background-position: center 20%;
 }
 
 .testimonial-avatar--zuckerberg {
@@ -687,7 +689,7 @@ body {
 .testimonial-avatar--branson {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Richard_Branson_Addresses_the_Our_Ocean_Conference_2015_in_Valpara%C3%ADso_%2821783214958%29_%28cropped%29.jpg/500px-Richard_Branson_Addresses_the_Our_Ocean_Conference_2015_in_Valpara%C3%ADso_%2821783214958%29_%28cropped%29.jpg');
     background-size: cover;
-    background-position: 55% 25%;
+    background-position: center 20%;
 }
 
 .testimonial-link {
