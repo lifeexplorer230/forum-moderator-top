@@ -626,6 +626,25 @@ body {
     background-position: center;
 }
 
+.testimonial-avatar--chief {
+    background-image: url('../images/chief_executive_logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.testimonial-link {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
 /* ========================================
    БЛОК 9: ЗАГОЛОВОК "ФОРУМ-ГРУППА — ЭТО..."
    ======================================== */
