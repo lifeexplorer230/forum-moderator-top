@@ -880,92 +880,19 @@ body {
     line-height: 1.5;
 }
 
-/* Meeting structure flow */
-.meeting-structure {
-    margin-top: 40px;
-    padding: 30px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: var(--border-radius-lg);
-}
-
-.meeting-structure__title {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--color-text-primary);
-    margin-bottom: 24px;
-}
-
-.meeting-structure__flow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.meeting-structure__step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 20px;
-    border-radius: var(--border-radius-md);
-    min-width: 120px;
-    text-align: center;
-}
-
-.meeting-structure__step--pink {
-    background-color: var(--color-pastel-pink);
-}
-
-.meeting-structure__step--blue {
+/* Meeting structure simple */
+.meeting-structure-simple {
+    margin-top: 30px;
+    padding: 20px 24px;
     background-color: var(--color-pastel-purple);
+    border-radius: var(--border-radius-md);
 }
 
-.meeting-structure__step--green {
-    background-color: var(--color-pastel-green);
-}
-
-.meeting-structure__step--purple {
-    background: linear-gradient(135deg, #e8d5f0 0%, #d4b8e8 100%);
-}
-
-.meeting-structure__icon {
-    font-size: 28px;
-    margin-bottom: 8px;
-}
-
-.meeting-structure__name {
-    font-size: 15px;
-    font-weight: 600;
+.meeting-structure-text {
+    font-size: 16px;
     color: var(--color-text-primary);
-    margin-bottom: 4px;
-}
-
-.meeting-structure__time {
-    font-size: 12px;
-    color: var(--color-text-secondary);
-}
-
-.meeting-structure__arrow {
-    font-size: 24px;
-    color: var(--color-text-secondary);
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .meeting-structure__flow {
-        flex-direction: column;
-    }
-
-    .meeting-structure__arrow {
-        transform: rotate(90deg);
-    }
-
-    .meeting-structure__step {
-        width: 100%;
-        max-width: 200px;
-    }
+    line-height: 1.6;
+    text-align: center;
 }
 
 /* ========================================
