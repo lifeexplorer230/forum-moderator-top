@@ -303,7 +303,7 @@ body {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background: url('../images/photo.jpg') center center / cover no-repeat;
+    background: url('../images/photo_new.jpg') center center / cover no-repeat;
     box-shadow: 0 4px 20px rgba(107, 255, 157, 0.08);
 }
 
