@@ -91,8 +91,8 @@ function createFormModal() {
                             <input type="text" id="userCity" name="city" required placeholder="Москва">
                         </div>
                         <div class="form-field">
-                            <label for="userSocial">Ссылка на соцсеть</label>
-                            <input type="text" id="userSocial" name="social" placeholder="t.me/username">
+                            <label for="userSocial">Ссылка на соцсеть *</label>
+                            <input type="text" id="userSocial" name="social" required placeholder="t.me/username">
                         </div>
                     </div>
 
@@ -102,8 +102,8 @@ function createFormModal() {
                     </div>
 
                     <div class="form-field">
-                        <label for="userIncome">Вилка годового дохода (2024/2025)</label>
-                        <input type="text" id="userIncome" name="income" placeholder="Например: 3-5 млн руб">
+                        <label for="userIncome">Вилка годового дохода (2024/2025) *</label>
+                        <input type="text" id="userIncome" name="income" required placeholder="Например: 3-5 млн руб">
                     </div>
 
                     <div class="form-field">
@@ -117,28 +117,28 @@ function createFormModal() {
                     </div>
 
                     <div class="form-field">
-                        <label for="userExpertise">В каких темах готовы делиться опытом?</label>
-                        <textarea id="userExpertise" name="expertise" placeholder="Чем можете быть полезны группе?"></textarea>
+                        <label for="userExpertise">В каких темах готовы делиться опытом? *</label>
+                        <textarea id="userExpertise" name="expertise" required placeholder="Чем можете быть полезны группе?"></textarea>
                     </div>
 
                     <div class="form-field">
-                        <label for="userMilestones">Вехи развития бизнеса/профессии (5-7 этапов)</label>
-                        <textarea id="userMilestones" name="milestones" placeholder="Ключевые этапы вашего пути"></textarea>
+                        <label for="userMilestones">Вехи развития бизнеса/профессии (5-7 этапов) *</label>
+                        <textarea id="userMilestones" name="milestones" required placeholder="Ключевые этапы вашего пути"></textarea>
                     </div>
 
                     <div class="form-field">
-                        <label for="userParams">5-7 параметров вашего дела</label>
-                        <textarea id="userParams" name="params" placeholder="Размер команды, выручка, география и т.д."></textarea>
+                        <label for="userParams">5-7 параметров вашего дела *</label>
+                        <textarea id="userParams" name="params" required placeholder="Размер команды, выручка, география и т.д."></textarea>
                     </div>
 
                     <div class="form-field">
-                        <label for="userFamily">Семейный статус, дети, девиз отношений</label>
-                        <textarea id="userFamily" name="family" placeholder="Немного о личном"></textarea>
+                        <label for="userFamily">Семейный статус, дети, девиз отношений *</label>
+                        <textarea id="userFamily" name="family" required placeholder="Немного о личном"></textarea>
                     </div>
 
                     <div class="form-field">
-                        <label for="userAbout">Что ещё важно знать о вас для группы?</label>
-                        <textarea id="userAbout" name="about" placeholder="Любая информация, которой хотите поделиться"></textarea>
+                        <label for="userAbout">Что ещё важно знать о вас для группы? *</label>
+                        <textarea id="userAbout" name="about" required placeholder="Любая информация, которой хотите поделиться"></textarea>
                     </div>
 
                     <div class="form-actions">
@@ -298,7 +298,7 @@ async function handleStep2Submit(e) {
 Email: ${formData.step2.email}
 Возраст: ${formData.step2.age}
 Город: ${formData.step2.city}
-Соцсеть: ${formData.step2.social || '—'}
+Соцсеть: ${formData.step2.social}
 
 ━━━━━━━━━━━━━━━━
 💼 БИЗНЕС/КАРЬЕРА
@@ -306,7 +306,7 @@ Email: ${formData.step2.email}
 Род деятельности:
 ${formData.step2.activity}
 
-Доход: ${formData.step2.income || '—'}
+Доход: ${formData.step2.income}
 
 Направление развития:
 ${formData.step2.goals}
@@ -315,21 +315,21 @@ ${formData.step2.goals}
 ${formData.step2.questions}
 
 Экспертиза:
-${formData.step2.expertise || '—'}
+${formData.step2.expertise}
 
 Вехи развития:
-${formData.step2.milestones || '—'}
+${formData.step2.milestones}
 
 Параметры дела:
-${formData.step2.params || '—'}
+${formData.step2.params}
 
 ━━━━━━━━━━━━━━━━
 👨‍👩‍👧‍👦 ЛИЧНОЕ
 ━━━━━━━━━━━━━━━━
-Семья: ${formData.step2.family || '—'}
+Семья: ${formData.step2.family}
 
 О себе:
-${formData.step2.about || '—'}
+${formData.step2.about}
 
 ━━━━━━━━━━━━━━━━
 ⏰ ${formData.step1.timestamp}`.trim();
