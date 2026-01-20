@@ -240,14 +240,12 @@ async function handleStep1Submit(e) {
     submitBtn.textContent = 'Отправка...';
 
     // Send to Telegram
-    const message = `
-🆕 *Новая заявка (Шаг 1)*
+    const message = `🆕 НОВАЯ ЗАЯВКА (Шаг 1)
 
-👤 *Имя:* ${formData.step1.name}
-📱 *Телефон:* ${formData.step1.phone}
+👤 Имя: ${formData.step1.name}
+📱 Телефон: ${formData.step1.phone}
 
-⏰ ${formData.step1.timestamp}
-    `.trim();
+⏰ ${formData.step1.timestamp}`.trim();
 
     try {
         await sendToTelegram(message);
@@ -290,53 +288,51 @@ async function handleStep2Submit(e) {
     submitBtn.textContent = 'Отправка...';
 
     // Send full application to Telegram
-    const message = `
-✅ *Полная заявка на форум-группу*
+    const message = `✅ ПОЛНАЯ ЗАЯВКА НА ФОРУМ-ГРУППУ
 
-━━━━━━━━━━━━━━━━━━
-👤 *КОНТАКТЫ*
-━━━━━━━━━━━━━━━━━━
-*Имя:* ${formData.step1.name}
-*Телефон:* ${formData.step1.phone}
-*Email:* ${formData.step2.email}
-*Возраст:* ${formData.step2.age}
-*Город:* ${formData.step2.city}
-*Соцсеть:* ${formData.step2.social || '—'}
+━━━━━━━━━━━━━━━━
+👤 КОНТАКТЫ
+━━━━━━━━━━━━━━━━
+Имя: ${formData.step1.name}
+Телефон: ${formData.step1.phone}
+Email: ${formData.step2.email}
+Возраст: ${formData.step2.age}
+Город: ${formData.step2.city}
+Соцсеть: ${formData.step2.social || '—'}
 
-━━━━━━━━━━━━━━━━━━
-💼 *БИЗНЕС/КАРЬЕРА*
-━━━━━━━━━━━━━━━━━━
-*Род деятельности:*
+━━━━━━━━━━━━━━━━
+💼 БИЗНЕС/КАРЬЕРА
+━━━━━━━━━━━━━━━━
+Род деятельности:
 ${formData.step2.activity}
 
-*Доход:* ${formData.step2.income || '—'}
+Доход: ${formData.step2.income || '—'}
 
-*Направление развития:*
+Направление развития:
 ${formData.step2.goals}
 
-*Вопросы для группы:*
+Вопросы для группы:
 ${formData.step2.questions}
 
-*Экспертиза:*
+Экспертиза:
 ${formData.step2.expertise || '—'}
 
-*Вехи развития:*
+Вехи развития:
 ${formData.step2.milestones || '—'}
 
-*Параметры дела:*
+Параметры дела:
 ${formData.step2.params || '—'}
 
-━━━━━━━━━━━━━━━━━━
-👨‍👩‍👧‍👦 *ЛИЧНОЕ*
-━━━━━━━━━━━━━━━━━━
-*Семья:* ${formData.step2.family || '—'}
+━━━━━━━━━━━━━━━━
+👨‍👩‍👧‍👦 ЛИЧНОЕ
+━━━━━━━━━━━━━━━━
+Семья: ${formData.step2.family || '—'}
 
-*О себе:*
+О себе:
 ${formData.step2.about || '—'}
 
-━━━━━━━━━━━━━━━━━━
-⏰ ${formData.step1.timestamp}
-    `.trim();
+━━━━━━━━━━━━━━━━
+⏰ ${formData.step1.timestamp}`.trim();
 
     try {
         await sendToTelegram(message);
@@ -364,8 +360,7 @@ async function sendToTelegram(message) {
         },
         body: JSON.stringify({
             chat_id: TG_CHAT_ID,
-            text: message,
-            parse_mode: 'Markdown'
+            text: message
         })
     });
 
