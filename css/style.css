@@ -2533,4 +2533,37 @@ body.debug-mode [data-block]:hover::after {
     }
 }
 
+/* Consent text */
+.consent-text {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.consent-text a {
+    color: #6c5ce7;
+    text-decoration: underline;
+}
+
+.consent-text a:hover {
+    color: #5a4bd1;
+}
+
+/* Footer links */
+.footer-links {
+    margin-top: 0.5rem;
+}
+
+.footer-link {
+    color: #888;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #6c5ce7;
+    text-decoration: underline;
+}
+
 /* Trigger deploy */
