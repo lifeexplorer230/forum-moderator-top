@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://forum.moderator.top/sitemap.xml
-
-# Crawl-delay для вежливости
-Crawl-delay: 1
+# Сайт переехал на moderator.top/forum/
+Sitemap: https://moderator.top/sitemap.xml
