@@ -311,7 +311,7 @@ body {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background: url('../images/photo_new.jpg') center center / cover no-repeat;
+    background: url('../images/photo_new.webp') center center / cover no-repeat;
     box-shadow: 0 4px 20px rgba(107, 255, 157, 0.08);
 }
 
@@ -492,33 +492,33 @@ body {
 }
 
 .avatar-1 {
-    background-image: url('../images/avatar1_new.jpg');
+    background-image: url('../images/avatar1_new.webp');
     background-size: 160%;
     background-position: 48% 25%;
 }
 
 .avatar-2 {
-    background-image: url('../images/avatar2.jpg');
+    background-image: url('../images/avatar2.webp');
 }
 
 .avatar-3 {
-    background-image: url('../images/avatar3.jpg');
+    background-image: url('../images/avatar3.webp');
 }
 
 .avatar-4 {
-    background-image: url('../images/avatar4.jpg');
+    background-image: url('../images/avatar4.webp');
 }
 
 .avatar-5 {
-    background-image: url('../images/avatar5.jpg');
+    background-image: url('../images/avatar5.webp');
 }
 
 .avatar-6 {
-    background-image: url('../images/avatar6.jpg');
+    background-image: url('../images/avatar6.webp');
 }
 
 .avatar-7 {
-    background-image: url('../images/avatar7.jpg');
+    background-image: url('../images/avatar7.webp');
 }
 
 .rating-stars {
@@ -669,13 +669,13 @@ body {
 }
 
 .testimonial-avatar--oscar {
-    background-image: url('../images/oscar_hartmann.jpg?v=2');
+    background-image: url('../images/oscar_hartmann.webp');
     background-size: cover;
     background-position: center;
 }
 
 .testimonial-avatar--chief {
-    background-image: url('../images/chief_executive_logo.png');
+    background-image: url('../images/chief_executive_logo.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -824,7 +824,7 @@ body {
 }
 
 .moderator-photo--roman {
-    background-image: url('../images/roman_moderator.jpg');
+    background-image: url('../images/roman_moderator.webp');
     background-size: cover;
     background-position: center;
 }
@@ -1118,15 +1118,15 @@ body {
 }
 
 .extra-illustration--meetings {
-    background-image: url('../images/illustration_meetings.png');
+    background-image: url('../images/illustration_meetings.webp');
 }
 
 .extra-illustration--support {
-    background-image: url('../images/illustration_support.png');
+    background-image: url('../images/illustration_support.webp');
 }
 
 .extra-illustration--buddy {
-    background-image: url('../images/illustration_buddy.png');
+    background-image: url('../images/illustration_buddy.webp');
 }
 
 .extra-title {
@@ -1349,7 +1349,7 @@ body {
 .step-placeholder {
     width: 100%;
     height: 300px;
-    background-image: url('../images/illustration_form.png');
+    background-image: url('../images/illustration_form.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1359,7 +1359,7 @@ body {
 .step-illustration {
     width: 100%;
     height: 300px;
-    background-image: url('../images/illustration_payment.png');
+    background-image: url('../images/illustration_payment.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1370,7 +1370,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: url('../images/illustration_videocall.png');
+    background-image: url('../images/illustration_videocall.webp');
     background-size: cover;
     background-position: center;
 }
@@ -1393,7 +1393,7 @@ body {
 .cta-illustration {
     width: 200px;
     height: 200px;
-    background-image: url('../images/illustration_cta.png');
+    background-image: url('../images/illustration_cta.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
