@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lifeexplorer230.github.io/forum-moderator-top/sitemap.xml
+Sitemap: https://forum.moderator.top/sitemap.xml
 
 # Crawl-delay для вежливости
 Crawl-delay: 1
