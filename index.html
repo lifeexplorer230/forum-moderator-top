@@ -57,12 +57,11 @@
 
     <!-- Preload критичных ресурсов -->
     <link rel="preload" href="images/photo_new.webp" as="image" fetchpriority="high">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Критичные стили -->
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Некритичные стили - загружаем после отрисовки -->
     <link rel="stylesheet" href="css/form.css" media="print" onload="this.media='all'">
