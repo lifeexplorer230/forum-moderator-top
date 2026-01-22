@@ -307,11 +307,11 @@ body {
     align-items: center;
 }
 
-.hero-photo {
+img.hero-photo {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background: url('../images/photo_new.webp') center center / cover no-repeat;
+    object-fit: cover;
     box-shadow: 0 4px 20px rgba(107, 255, 157, 0.08);
 }
 

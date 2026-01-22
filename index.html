@@ -55,11 +55,18 @@
     }
     </script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Preload критичных ресурсов -->
+    <link rel="preload" href="images/photo_new.webp" as="image" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Критичные стили -->
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/form.css">
+
+    <!-- Некритичные стили - загружаем после отрисовки -->
+    <link rel="stylesheet" href="css/form.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/form.css"></noscript>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
@@ -106,6 +113,7 @@
         </div>
     </header>
 
+    <main>
     <!-- БЛОК 2: Hero Section -->
     <section class="hero">
         <div class="container">
@@ -125,7 +133,7 @@
                 </div>
 
                 <div class="hero-image">
-                    <div class="hero-photo"></div>
+                    <img src="images/photo_new.webp" alt="Роман Воробьев — модератор форум-групп" class="hero-photo" width="350" height="350" fetchpriority="high">
                 </div>
             </div>
         </div>
@@ -915,6 +923,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- БЛОК 26: Footer -->
     <footer class="footer">
