@@ -10,11 +10,11 @@
     --color-bg-secondary: #f5f5f5;
 
     /* Accent colors */
-    --color-accent-pink: #ff6b9d;
+    --color-accent-pink: #e85a8f;
     --color-accent-green: #22c55e;
-    --color-accent-blue: #6b9dff;
-    --color-accent-orange: #ffb86b;
-    --color-accent-purple: #8b7dff;
+    --color-accent-blue: #4a90d9;
+    --color-accent-orange: #f5a855;
+    --color-accent-purple: #7c6fef;
 
     /* Pastel backgrounds - очень нежные, приглушенные */
     --color-pastel-green: #f0f7f0;
@@ -82,7 +82,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "SF Pro Display", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Onest", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     font-size: 17px;
     line-height: 1.7;
     color: var(--color-text-primary);
@@ -176,9 +176,17 @@ body {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 350px 1fr;
     gap: 60px;
     align-items: center;
+}
+
+.hero-image {
+    order: -1;
+}
+
+.hero-text {
+    order: 1;
 }
 
 .hero-text {
@@ -336,13 +344,31 @@ body {
     font-weight: 600;
     line-height: 32px;
     color: var(--color-text-primary);
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.goal-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: calc(var(--border-radius-md) + 2px);
+    background: linear-gradient(135deg, var(--color-accent-pink), var(--color-accent-blue));
+    opacity: 0.3;
+    z-index: -1;
+    transition: opacity 0.25s ease;
 }
 
 .goal-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.goal-card:hover::before {
+    opacity: 0.5;
 }
 
 .goal-card--green {
@@ -850,11 +876,31 @@ body {
     gap: 12px;
     padding: 20px 24px;
     border-radius: var(--border-radius-md);
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.meeting-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: calc(var(--border-radius-md) + 2px);
+    background: linear-gradient(135deg, var(--color-accent-pink), var(--color-accent-purple));
+    opacity: 0.2;
+    z-index: -1;
+    transition: opacity 0.25s ease;
 }
 
 .meeting-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-card:hover::before {
+    opacity: 0.4;
 }
 
 .meeting-card--pink {
@@ -949,11 +995,31 @@ body {
     padding: 16px 20px;
     background-color: var(--color-bg-secondary);
     border-radius: var(--border-radius-md);
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.topic-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: calc(var(--border-radius-md) + 2px);
+    background: linear-gradient(135deg, var(--color-accent-green), var(--color-accent-blue));
+    opacity: 0.15;
+    z-index: -1;
+    transition: opacity 0.25s ease;
+}
+
+.topic-card:hover::before {
+    opacity: 0.3;
 }
 
 .topic-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .topic-icon {
@@ -1612,7 +1678,7 @@ body {
     }
 
     .hero-content {
-        grid-template-columns: 1fr 300px;
+        grid-template-columns: 300px 1fr;
         gap: 40px;
     }
 
