@@ -13,25 +13,31 @@ document.addEventListener('DOMContentLoaded', function() {
     let visibleCount = 4;
     let currentlyPlaying = null;
 
-    // Calculate visible count based on screen width
+    // Кешируем размеры чтобы избежать forced layout
+    let cachedTrackWidth = 0;
+    let cachedCircleWidth = 0;
+    const gap = 24;
+
+    // Calculate visible count based on cached dimensions
     function updateVisibleCount() {
-        const trackWidth = track.offsetWidth;
-        const circleWidth = circles[0].offsetWidth;
-        const gap = 24;
-        visibleCount = Math.floor((trackWidth + gap) / (circleWidth + gap));
+        visibleCount = Math.floor((cachedTrackWidth + gap) / (cachedCircleWidth + gap));
         visibleCount = Math.max(1, Math.min(visibleCount, 4));
     }
 
-    // Update slider position
+    // Update slider position (no layout reads here)
     function updateSlider() {
-        const circleWidth = circles[0].offsetWidth;
-        const gap = 24;
-        const offset = currentIndex * (circleWidth + gap);
+        const offset = currentIndex * (cachedCircleWidth + gap);
         slides.style.transform = `translateX(-${offset}px)`;
 
         // Update button states
         prevBtn.disabled = currentIndex === 0;
         nextBtn.disabled = currentIndex >= circles.length - visibleCount;
+    }
+
+    // Read dimensions once (batched read)
+    function cacheDimensions() {
+        cachedTrackWidth = track.offsetWidth;
+        cachedCircleWidth = circles[0] ? circles[0].offsetWidth : 180;
     }
 
     // Navigation
@@ -81,17 +87,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize
+    // Initialize - single layout read
+    cacheDimensions();
     updateVisibleCount();
     updateSlider();
 
-    // Update on resize
+    // Debounced resize handler
+    let resizeTimeout;
     window.addEventListener('resize', function() {
-        updateVisibleCount();
-        // Reset to beginning if current index is out of bounds
-        if (currentIndex > circles.length - visibleCount) {
-            currentIndex = Math.max(0, circles.length - visibleCount);
-        }
-        updateSlider();
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            cacheDimensions();
+            updateVisibleCount();
+            if (currentIndex > circles.length - visibleCount) {
+                currentIndex = Math.max(0, circles.length - visibleCount);
+            }
+            updateSlider();
+        }, 150);
     });
 });
