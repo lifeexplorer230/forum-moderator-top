@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- TODO Роман: подключить счётчики (Метрика/GTM) под НОВЫЙ сайт — счётчики moderator.top сюда не переносим -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ВРЕМЕННО: закрыто от индексации, пока не получено согласие последнего участника на видео встречи.
+         Снять эту строку, когда согласие придёт. -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>СИИстема — сообщество предпринимателей, внедряющих ИИ в бизнес руками</title>
+    <meta name="description" content="Закрытое сообщество предпринимателей про реальные внедрения ИИ в бизнес. Еженедельные встречи, живые разборы внедрений, цели недели. Мастерская, а не обучение.">
+    <meta name="keywords" content="ИИ для бизнеса, внедрение ИИ, сообщество предпринимателей, ИИ для селлеров, нейросети в бизнесе, вайб-кодинг">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://moderator.top/siistema/">
+    <meta property="og:url" content="https://moderator.top/siistema/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="СИИстема — сообщество предпринимателей, внедряющих ИИ руками">
+    <meta property="og:description" content="Чего не расскажет ChatGPT. Закрытое сообщество предпринимателей про реальные внедрения ИИ в бизнес: каждую неделю конкретные кейсы — что сделали, как внедрили, где ошиблись.">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="СИИстема">
+
+    <!-- Preload критичных ресурсов -->
+    <link rel="preload" href="images/photo_new.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Критичные стили -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Шрифты - загружаем после основных стилей -->
+    <link rel="stylesheet" href="css/fonts.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
+</head>
+<body>
+
+    <!-- БЛОК 1: Header / Навигация -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="header-logo">СИИстема</a>
+
+                <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li><a href="#about" class="nav__link">О сообществе</a></li>
+                        <li><a href="#formats" class="nav__link">Форматы</a></li>
+                        <li><a href="#cases" class="nav__link">Внедрения</a></li>
+                        <li><a href="#pricing" class="nav__link">Тарифы</a></li>
+                        <li><a href="#faq" class="nav__link">FAQ</a></li>
+                        <!-- TODO Роман: заменить ссылку на анкету/бота, когда будут -->
+                        <li><a href="https://t.me/lifeexplorer23" target="_blank" class="nav__link nav__link--cta">Познакомиться</a></li>
+                    </ul>
+                </nav>
+
+                <button class="menu-burger" aria-label="Меню" aria-expanded="false" aria-controls="mainNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <!-- БЛОК 2: Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Сообщество СИИстема</p>
+                    <h1 class="hero-title">Чего <span class="accent accent--pink">не расскажет</span> ChatGPT</h1>
+
+                    <p class="hero-description">«СИИстема» — закрытое сообщество предпринимателей про реальные внедрения ИИ в бизнес. Каждую неделю — конкретные кейсы: что сделали, как внедрили, где ошиблись и какой результат получили</p>
+
+                    <a href="https://t.me/lifeexplorer23" target="_blank" class="btn btn-primary">
+                        Познакомиться — 15 минут
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <p class="btn-note">Напишете в Telegram, созвонимся на 15–20 минут. Берём не всех, и скажем об этом прямо.</p>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/photo_new.webp" alt="Роман Воробьёв — основатель сообщества СИИстема" class="hero-photo" width="350" height="350" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 4: Заголовок с цветными акцентами -->
+    <section class="colored-heading-section" id="about">
+        <div class="container container--narrow">
+            <h2 class="colored-heading">
+                Сообщество <strong class="accent accent--purple">предпринимателей</strong>,
+                <strong class="accent accent--pink">руководителей</strong> и
+                <strong class="accent accent--blue">собственников, которые сами в операционке</strong>.
+                Тех, кто уже пробует ИИ в своём деле, а не пересказывает статьи о нём
+            </h2>
+
+            <p class="colored-heading-description">
+                Главное — не размер бизнеса, а готовность разбираться самому: приносить настоящую задачу своего бизнеса и вместе искать, каким ИИ-инструментом её закрыть. Писать код при этом необязательно.
+            </p>
+
+            <a href="https://t.me/lifeexplorer23" target="_blank" class="btn btn-secondary btn-center">
+                <span class="btn-icon"><img src="images/icons/dusk/edit.png" alt="Иконка заявки" loading="lazy" width="20" height="20"></span>
+                Познакомиться — 15 минут
+            </a>
+        </div>
+    </section>
+
+    <!-- БЛОК 3: Чего не знает ChatGPT (разгадка заголовка) -->
+    <section class="goals-section">
+        <div class="container">
+            <h2 class="colored-heading">Инструментов становится всё больше. <strong class="accent accent--pink">Ясности — нет.</strong></h2>
+            <p class="colored-heading-description">ChatGPT знает, какие есть сервисы, как их подключить и как написать код. А вот этого он не знает — и, если спросить, ответит уверенно и мимо:</p>
+
+            <div class="goals-grid">
+                <div class="goal-card goal-card--green">
+                    <span class="goal-icon"><img src="images/icons/dusk/accuracy.png" alt="Иконка результата" width="32" height="32" loading="lazy"></span>
+                    <span class="goal-text">что из этого реально заработало у предпринимателя с похожим бизнесом</span>
+                </div>
+
+                <div class="goal-card goal-card--purple">
+                    <span class="goal-icon"><img src="images/icons/dusk/time-machine.png" alt="Иконка времени" width="32" height="32" loading="lazy"></span>
+                    <span class="goal-text">сколько времени это заняло на самом деле, а не по описанию на сайте</span>
+                </div>
+
+                <div class="goal-card goal-card--pink">
+                    <span class="goal-icon"><img src="images/icons/dusk/cancel.png" alt="Иконка поломки" width="32" height="32" loading="lazy"></span>
+                    <span class="goal-text">что развалилось на второй неделе и почему</span>
+                </div>
+
+                <div class="goal-card goal-card--orange">
+                    <span class="goal-icon"><img src="images/icons/dusk/goal.png" alt="Иконка выбора" width="32" height="32" loading="lazy"></span>
+                    <span class="goal-text">стоит ли вообще браться за это в вашем случае</span>
+                </div>
+            </div>
+
+            <p class="colored-heading-description goals-outro">Вам не нужно знать всё про ИИ. Нужно понимать, что внедрять первым, что из этого даст результат и что можно отдать команде. Такого знания нет ни в одной статье: оно есть только у тех, кто уже прошёл этот путь на своём бизнесе.</p>
+        </div>
+    </section>
+
+    <!-- БЛОК 7: Главная идея — инструкций нет, маршруты есть -->
+    <section class="statement-section">
+        <div class="container container--narrow">
+            <h2 class="statement-heading">
+                Готовых инструкций пока нет. <strong class="accent accent--green">А первые пройденные пути уже есть</strong>
+            </h2>
+            <p class="statement-body">ИИ меняется быстрее, чем выходят книги и курсы: программа устаревает раньше, чем вы её пройдёте. Поэтому мы не обсуждаем теорию — мы разбираем внедрения, которые уже случились у участников.</p>
+            <p class="statement-body">«СИИстема» — <strong class="accent accent--green">мастерская, а не обучение</strong>. Учимся только в действии.</p>
+        </div>
+    </section>
+
+    <!-- БЛОК У: Как устроено участие (слияние прежних 8 и 10) -->
+    <section class="meetings-section" id="formats">
+        <div class="container container--narrow">
+            <h2 class="section-title">Как устроено участие</h2>
+
+            <h3 class="formats-group">Каждую неделю</h3>
+            <div class="meetings-list">
+                <div class="meeting-card meeting-card--pink">
+                    <span class="meeting-icon"><img src="images/icons/dusk/chat.png" alt="Иконка встречи" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">Онлайн-встреча по пятницам, полтора часа — свободный рабочий формат. Если у нескольких участников накопились похожие задачи, встреча превращается в воркшоп: решение собирается прямо на ней, от задачи до первого работающего прототипа</p>
+                </div>
+
+                <div class="meeting-card meeting-card--blue">
+                    <span class="meeting-icon"><img src="images/icons/dusk/goal.png" alt="Иконка целей" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">Цели недели — вы ставите одну задачу на неделю и коротко отчитываетесь по форме. Это помогает держать фокус и не откладывать внедрение</p>
+                </div>
+
+                <div class="meeting-card meeting-card--green">
+                    <span class="meeting-icon"><img src="images/icons/dusk/communication.png" alt="Иконка чата" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">Между встречами — общий чат и база внедрений участников: можно задать вопрос и найти человека с похожей задачей</p>
+                </div>
+            </div>
+
+            <h3 class="formats-group">Что происходит на встрече</h3>
+            <div class="meetings-list">
+                <div class="meeting-card meeting-card--green">
+                    <span class="meeting-icon"><img src="images/icons/dusk/visible.png" alt="Иконка демонстрации" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">Участники показывают с экрана, что собрали: дашборды, ботов и ИИ-агентов — программы, которые сами делают рутину: собирают отчёты, следят за ценами, готовят ответы на отзывы. Показывают как есть, вместе с недоделками</p>
+                </div>
+
+                <div class="meeting-card meeting-card--pink">
+                    <span class="meeting-icon"><img src="images/icons/dusk/idea.png" alt="Иконка разбора" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">Разбираем вашу задачу — приносите свою, обсуждаем всей группой. Один участник собрал за три часа то, на что до этого потратил двое суток впустую: на встрече увидел, как похожее уже сделали другие</p>
+                </div>
+
+                <div class="meeting-card meeting-card--blue">
+                    <span class="meeting-icon"><img src="images/icons/dusk/conference-call.png" alt="Иконка показа" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">На следующей встрече вы показываете с экрана, что сделали и на чём остановились</p>
+                </div>
+            </div>
+
+            <h3 class="formats-group">Реже, но регулярно</h3>
+            <div class="meetings-list">
+                <div class="meeting-card meeting-card--green">
+                    <span class="meeting-icon"><img src="images/icons/dusk/handshake.png" alt="Иконка живой встречи" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">Мафклуб предпринимателей — наши живые встречи в Москве вокруг игры в мафию: два раза в месяц, знакомства и разговоры вне онлайна</p>
+                </div>
+
+                <div class="meeting-card meeting-card--purple">
+                    <span class="meeting-icon"><img src="images/icons/dusk/diamond.png" alt="Иконка стратегии" loading="lazy" width="24" height="24"></span>
+                    <p class="meeting-text">«Совет директоров» — ежемесячная стратегическая сессия в формате «равный с равным»: обсуждаем большие цели бизнеса и приоритеты внедрения. Входит в верхний уровень участия, не в базовый</p>
+                </div>
+            </div>
+
+            <p class="cases-more">Это не формат пассивного просмотра. Чем активнее вы приносите свои задачи и показываете результат, тем больше получаете.</p>
+        </div>
+    </section>
+
+    <!-- БЛОК 11: Реальные внедрения -->
+    <section class="topics-section" id="cases">
+        <div class="container container--narrow">
+            <h2 class="statement-heading">
+                Что участники собрали сами — <strong class="accent accent--green">и показали с экрана на встречах</strong>
+            </h2>
+            <p class="cases-lead">Не обещания дохода. Решения, которые работают в их компаниях прямо сейчас. Вот те самые сроки и цифры, которых нет у ChatGPT.</p>
+
+            <div class="case-list">
+                <article class="case-card">
+                    <p class="case-who">Константин</p>
+                    <p class="case-biz">EasyLight, гибкое стекло на маркетплейсах · 13–15 млн ₽/мес</p>
+                    <p class="case-body"><strong>Было:</strong> аналитика на Google Таблицах, сторонние программисты, много времени и денег.</p>
+                    <p class="case-body"><strong>Стало:</strong> своя система управления рекламой, финансовая аналитика по всем магазинам в одном окне, трекинг позиций в поисковой выдаче. Дашборд для 1265 товаров — меньше чем за две недели.</p>
+                    <p class="case-facts">Никто в компании не пишет код напрямую.</p>
+                    <blockquote class="case-quote">«Описываю проблему и без месяца ожиданий получаю необходимый мне результат»</blockquote>
+                </article>
+
+                <article class="case-card">
+                    <p class="case-who">Сергей</p>
+                    <p class="case-biz">Бренд профессиональной косметики · ≈10 млн ₽/мес</p>
+                    <p class="case-body">ИИ-агент сам собирает на маркетплейсе показатели за вчера — по рекламе, продажам и заказам — и даёт рекомендации. Раньше Сергей делал это руками.</p>
+                    <p class="case-body">Следом собрал: полный цикл управления товаром — от заказа на производстве до распределения по складам; еженедельный анализ конкурентов с подсветкой «красных зон»; аудит бухгалтерии.</p>
+                    <p class="case-facts">Освободил 6 часов в неделю.</p>
+                    <blockquote class="case-quote">«На маркетплейсах я всё делаю один, в связке с ИИ, который закрывает определённые функции»</blockquote>
+                </article>
+
+                <article class="case-card">
+                    <p class="case-who">Александр Маринкин</p>
+                    <p class="case-biz">Платный сервис для селлеров Wildberries</p>
+                    <p class="case-body">Двухфакторная авторизация на входе в сервис.</p>
+                    <p class="case-facts">На это ушло два дня. Прежний программист не мог решить задачу с декабря.</p>
+                    <p class="case-body">Следом — автоматическая замена устаревающих прокси и автобронирование слотов поставки.</p>
+                    <blockquote class="case-quote">«Двадцать минут — и полная автоматизация»</blockquote>
+                </article>
+            </div>
+
+            <h3 class="formats-group">А это ломалось</h3>
+            <p class="cases-lead">Разбираем не только победы. Из того, что показывали на встречах:</p>
+            <div class="case-list">
+                <article class="case-card">
+                    <p class="case-body"><strong>Сервер взломали из-за короткого пароля.</strong> ИИ поднял участнику базу данных и оставил слабый пароль. Сервер взломали и трое суток гоняли на нём чужой майнер. Разбирали всей группой, как раздавать доступы, чтобы такого не повторилось.</p>
+                </article>
+                <article class="case-card">
+                    <p class="case-body"><strong>Шесть часов работы пропали.</strong> Помощник потерял контекст задачи, и день ушёл впустую. На той же встрече участник собрал себе правило, которое теперь сохраняет состояние после каждого шага, — проблему закрыли, пока разговаривали.</p>
+                </article>
+                <article class="case-card">
+                    <p class="case-body"><strong>ChatGPT посчитал кассовый разрыв неверно.</strong> Считал варианты финансирования — и складывал погашения вместо того, чтобы вычитать. Ошибку нашли, только когда пересчитали руками. Отсюда правило: за ИИ проверяем.</p>
+                </article>
+            </div>
+
+            <p class="cases-more">И ещё, из показанного на встречах: ИИ помогает оспаривать несправедливые отзывы — сверяет каждый новый с правилами площадки и готовит обоснование · ~10 роликов для соцсетей из одного эфира + автоматизация бартера с блогерами · ИИ-тесты для найма и аттестации · боты остатков и поставок, мониторинг складов, сверка замеров</p>
+        </div>
+    </section>
+
+    <!-- БЛОК 11.5: Видеоотзывы участников -->
+    <!-- Разрешения на видео и на именные кейсы получены (Костя, Сергей, Александр Маринкин) — подтверждено 27.07.2026 -->
+    <!-- БЛОК 11.4: Нарезка живой встречи -->
+    <section class="meeting-clip-section">
+        <div class="container container--narrow">
+            <h2 class="statement-heading">
+                Так выглядит встреча — <strong class="accent accent--green">без постановки</strong>
+            </h2>
+            <p class="cases-lead">Фрагменты записей за февраль–июль. Ничего не переснимали: демонстрации с экрана, реакции, разбор провалов.</p>
+            <video class="meeting-clip-player" controls playsinline preload="none"
+                   poster="/siistema/media/vstrecha-poster.jpg" width="1280" height="720">
+                <source src="/siistema/media/vstrecha.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео. <a href="/siistema/media/vstrecha.mp4">Скачать нарезку встречи</a>.
+            </video>
+            <p class="cases-more">7 минут. Видео тяжёлое — загрузится, когда нажмёте.</p>
+        </div>
+    </section>
+
+    <section class="video-testimonials-section" id="video-testimonials">
+        <div class="container container--wide">
+            <h2 class="statement-heading">
+Двое участников — <strong class="accent accent--blue">на видео</strong>
+            </h2>
+            <div class="video-testimonials-grid">
+                <figure class="video-testimonial">
+                    <video class="video-testimonial-player" controls playsinline preload="none"
+                           poster="media/otzyv-kostya.jpg" width="464" height="848">
+                        <source src="media/otzyv-kostya.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео. <a href="media/otzyv-kostya.mp4">Скачать отзыв Константина</a>.
+                    </video>
+                    <figcaption class="video-testimonial-caption">
+                        <span class="video-testimonial-author">Константин</span>
+                        <span class="video-testimonial-bio">EasyLight · гибкое стекло, 13–15 млн ₽/мес</span>
+                    </figcaption>
+                </figure>
+                <figure class="video-testimonial">
+                    <video class="video-testimonial-player" controls playsinline preload="none"
+                           poster="media/otzyv-sergey.jpg" width="720" height="1280">
+                        <source src="media/otzyv-sergey.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео. <a href="media/otzyv-sergey.mp4">Скачать отзыв Сергея</a>.
+                    </video>
+                    <figcaption class="video-testimonial-caption">
+                        <span class="video-testimonial-author">Сергей</span>
+                        <span class="video-testimonial-bio">Бренд профессиональной косметики, ≈10 млн ₽/мес</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК Г: Голоса участников (слияние прежних 6, 9, 12) -->
+    <section class="testimonial-section testimonial-section--light">
+        <div class="container container--wide">
+            <h2 class="section-title">Участники — своими словами</h2>
+
+            <div class="case-list">
+                <article class="case-card">
+                    <blockquote class="case-quote">«В искусственном интеллекте крайне мало кто вообще что-то понимает — обсудить это больше не с кем. А тут задал вопрос, получил большое обсуждение и полезную обратную связь. Вот это для меня самое важное»</blockquote>
+                    <p class="case-biz">Константин · EasyLight, гибкое стекло на маркетплейсах</p>
+                </article>
+
+                <article class="case-card">
+                    <blockquote class="case-quote">«Группа дала мне ритм формулирования целей — и это немножко порядок в голове наводит. Я постоянно выделяю на это время, много чего нового узнаю из наших разговоров. Я кайфую здесь, и от результатов доволен»</blockquote>
+                    <p class="case-biz">Александр Беляков · селлер Ozon</p>
+                </article>
+
+                <article class="case-card">
+                    <blockquote class="case-quote">«Для меня это вообще прям окно в будущее. Я слушаю, и мне хочется тянуться, идти вперёд. Вдохновляюсь»</blockquote>
+                    <blockquote class="case-quote">«Пазл начинает складываться — получаешь внутреннее ощущение классное» · «Жалко, что мы только раз в неделю»</blockquote>
+                    <p class="case-biz">Участники сообщества · из записей встреч, февраль–июль 2026</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 11.7: Мягкий CTA после доказательств -->
+    <section class="colored-heading-section">
+        <div class="container container--narrow">
+            <h2 class="colored-heading">Есть задача, которую вы давно хотите <strong class="accent accent--pink">решить с помощью ИИ</strong>?</h2>
+            <p class="colored-heading-description">Давайте созвонимся на 15–20 минут. Я отвечу на ваши вопросы, пойму, чем вы занимаетесь, и честно скажу, есть ли вам смысл заходить.</p>
+            <a href="https://t.me/lifeexplorer23" target="_blank" class="btn btn-secondary btn-center">
+                <span class="btn-icon"><img src="images/icons/dusk/edit.png" alt="Иконка заявки" loading="lazy" width="20" height="20"></span>
+                Познакомиться — 15 минут
+            </a>
+        </div>
+    </section>
+
+    <!-- БЛОК 12.5: Три главных возражения -->
+    <section class="topics-section">
+        <div class="container container--narrow">
+            <h2 class="section-title">Три сомнения, которые чаще всего мешают</h2>
+
+            <div class="case-list">
+                <article class="case-card">
+                    <p class="case-who">«Я не технарь. У меня не получится»</p>
+                    <p class="case-body">Мы обсуждаем, что должно получиться, а не как это написать. От вас — сформулировать цель, понять логику решения и проверить результат. Код напишет ИИ, специалист или ваша команда.</p>
+                    <p class="case-facts">Дашборд для 1265 товаров собрал селлер, который до этого не написал ни строчки кода.</p>
+                </article>
+
+                <article class="case-card">
+                    <p class="case-who">«Пусть этим занимается моя команда»</p>
+                    <p class="case-body">Команда может внедрять. Но предприниматель выбирает, какую задачу решать, какой результат считать ценным и куда направлять ресурсы.</p>
+                    <p class="case-body">Чтобы правильно поставить задачу команде, нужно самому понимать возможности и ограничения ИИ.</p>
+                </article>
+
+                <article class="case-card">
+                    <p class="case-who">«Это не применимо к моему бизнесу»</p>
+                    <p class="case-body">Мы не предлагаем копировать чужие решения один в один. Мы разбираем принципы: какую задачу решали, почему выбрали этот подход, где были ошибки и как адаптировать решение под другой бизнес.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 13: Кому НЕ подойдёт -->
+    <section class="anti-topics-section">
+        <div class="container container--narrow">
+            <h2 class="statement-heading">
+                Мы тоже выбираем — <strong class="accent accent--pink">и это часть продукта</strong>
+            </h2>
+
+            <div class="anti-topics-list">
+                <div class="anti-topic-card">
+                    <span class="anti-topic-icon"><img src="images/icons/dusk/cancel.png" alt="Иконка запрета" loading="lazy" width="24" height="24"></span>
+                    <p class="anti-topic-text">Отказываем, если у человека нет настоящей задачи в собственном бизнесе. «Просто интересно» и «сейчас это модно» здесь не работают</p>
+                </div>
+
+                <div class="anti-topic-card">
+                    <span class="anti-topic-icon"><img src="images/icons/dusk/cancel.png" alt="Иконка запрета" loading="lazy" width="24" height="24"></span>
+                    <p class="anti-topic-text">Отказываем, если человек ждёт, что ИИ всё сделает сам, а его участие сведётся к просмотру</p>
+                </div>
+
+                <div class="anti-topic-card">
+                    <span class="anti-topic-icon"><img src="images/icons/dusk/cancel.png" alt="Иконка запрета" loading="lazy" width="24" height="24"></span>
+                    <p class="anti-topic-text">Отказываем, если нужны гарантии в договоре. Гарантий нет: результат делаете вы</p>
+                </div>
+            </div>
+
+            <p class="cases-more">«СИИстема» — для тех, кто готов не только брать, но и делиться своим опытом. Поэтому мы знакомимся до оплаты, а не после.</p>
+        </div>
+    </section>
+
+    <!-- БЛОК Ч: Честные границы (слияние прежних 13.5 и 14) -->
+    <section class="statement-section">
+        <div class="container container--narrow">
+            <h2 class="statement-heading">
+                Через месяц что-нибудь сломается. <strong class="accent accent--pink">Это нормально</strong>
+            </h2>
+            <p class="statement-body">Эйфория от ИИ обычно проходит через месяц-полтора. Что-то перестаёт работать, сервис меняет правила, результат оказывается слабее ожиданий. Кажется, что время потрачено зря. В одиночку на этом месте чаще всего бросают. В группе — реже: на следующей встрече кто-то показывает, как прошёл через то же самое.</p>
+            <p class="statement-body">Гарантий нет, и в договоре их не будет: результат делаете вы. Что есть с нашей стороны — люди, которые уже проходили похожее, разбор вашей задачи всей группой и срок, к которому вы сами обещали показать результат.</p>
+            <p class="statement-body">Кейсы с цифрами публикуем по мере их появления. Если цифр нет — не придумываем.</p>
+        </div>
+    </section>
+
+    <!-- БЛОК 15: Кто ведёт -->
+    <section class="moderators-section" id="moderators">
+        <div class="container container--wide">
+            <h2 class="section-title">Кто ведёт</h2>
+
+            <div class="moderators-grid">
+                <div class="moderator-card">
+                    <div class="moderator-photo moderator-photo--roman"></div>
+                    <div class="moderator-info">
+                        <h3 class="moderator-name">Роман Воробьёв</h3>
+                        <p class="moderator-bio">Основатель сообщества «СИИстема», предприниматель. Работает с маркетплейсами с 2017 года: сначала Amazon, затем Ozon и Wildberries</p>
+                        <p class="moderator-experience">Бизнес-тренер: преподавал коучинг в Международном Эриксоновском университете, вёл тренинги по управлению для Сбербанка, соавтор курса по маркетплейсам в РУДН</p>
+                        <p class="moderator-experience">Собрал себе команду ИИ-агентов — программ, которые работают как сотрудники: ищут, пишут, следят за задачами. С их помощью за квартал с нуля вошёл в топ-20 исследователей кибербезопасности. Не рассказывает про ИИ, а работает им</p>
+                        <p class="moderator-experience">«Если ИИ сделал это со мной в чужом, сложнейшем поле — представьте, что он сделает внутри вашего бизнеса, который вы знаете назубок»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 16: Тарифы -->
+    <section class="pricing-section" id="pricing">
+        <div class="container container--wide">
+            <h2 class="section-title">Два уровня участия</h2>
+
+            <p class="pricing-description">
+                «Сообщество» — основной уровень. «Совет директоров» — для собственников, которым нужна ещё и стратегическая работа.
+            </p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card pricing-card--basic">
+                    <span class="pricing-icon"><img src="images/icons/dusk/chat.png" alt="Иконка сообщества" loading="lazy" width="24" height="24"></span>
+                    <h3 class="pricing-name">Сообщество</h3>
+                    <p class="pricing-price">15 000 ₽/мес</p>
+                    <p class="pricing-billing">или 60 000 ₽ за полгода — это 10 000 ₽ в месяц. Входят: еженедельная встреча по пятницам · цели недели · чат и база внедрений участников · живые встречи Мафклуба в Москве два раза в месяц</p>
+                </div>
+
+                <div class="pricing-card pricing-card--optimal">
+                    <span class="pricing-badge">Для собственников</span>
+                    <span class="pricing-icon"><img src="images/icons/dusk/diamond.png" alt="Иконка совета" loading="lazy" width="24" height="24"></span>
+                    <h3 class="pricing-name">«Совет директоров»</h3>
+                    <p class="pricing-price">300 000 ₽/год</p>
+                    <p class="pricing-billing">Всё из «Сообщества» и ежемесячная стратегическая сессия «Совет директоров» по целям бизнеса — в формате «равный с равным»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 17: Как попасть -->
+    <section class="steps-section">
+        <div class="container container--wide">
+            <h2 class="section-title">Как попасть в сообщество?</h2>
+
+            <div class="step">
+                <div class="step-content">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon"><img src="images/icons/dusk/edit.png" alt="Иконка заявки" loading="lazy" width="24" height="24"></span>
+                    </div>
+                    <h3 class="step-title">Шаг 1: написать нам</h3>
+                    <p class="step-description">
+                        Напишите пару слов в Telegram: кто вы, чем занимаетесь и что хотите внедрить. Чем подробнее расскажете, тем точнее мы поймём, есть ли вам смысл заходить.
+                    </p>
+                    <a href="https://t.me/lifeexplorer23" target="_blank" class="btn btn-action">
+                        Познакомиться — 15 минут
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="step-image">
+                    <div class="step-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-content">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon"><img src="images/icons/dusk/phone.png" alt="Иконка звонка" loading="lazy" width="24" height="24"></span>
+                    </div>
+                    <h3 class="step-title">Шаг 2: короткий разговор-знакомство</h3>
+                    <p class="step-description">
+                        15–20 минут: знакомимся, отвечаем на вопросы. Мы тоже выбираем: принимаем тех, кому действительно нужно внедрять.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <div class="step-photo"></div>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-content">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon"><img src="images/icons/dusk/conference-call.png" alt="Иконка встречи" loading="lazy" width="24" height="24"></span>
+                    </div>
+                    <h3 class="step-title">Шаг 3: первая встреча</h3>
+                    <p class="step-description">
+                        Заходите в чат и на ближайшую еженедельную встречу. У большинства первый работающий процесс появляется через две-четыре недели. Это не гарантия — это то, что мы видим по группе.
+                    </p>
+                </div>
+                <div class="step-image">
+                    <div class="step-illustration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 18: FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container container--narrow">
+            <h2 class="section-title">Частые вопросы</h2>
+
+            <p class="faq-description">
+                Те, что задают на знакомстве и на первых встречах
+            </p>
+
+            <a href="https://t.me/lifeexplorer23" target="_blank" class="btn btn-action btn-action--center">
+                Задать свой вопрос
+            </a>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Надо ли уметь программировать?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Нет. Важно уметь сформулировать задачу бизнеса и проверить результат — техническую часть можно делать вместе с ИИ, командой или специалистом. Среди участников программистов нет.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">А это не страшно — давать ИИ доступ к данным бизнеса?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Не любому сервису и не ко всем данным. На практике: доступ «только чтение», правило «один помощник — одна задача», базовая безопасность сервера. Это одна из самых частых тем на встречах — разбираем и то, что у кого-то пошло не так, чтобы остальные не повторяли.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Сколько времени это занимает в неделю?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Одна онлайн-встреча в неделю — полтора часа. Плюс ваша собственная работа над задачей: сколько готовы вложить, столько и вложите. Посещение свободное, а еженедельная цель помогает держать фокус даже в загруженные недели.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Я не селлер маркетплейсов — мне подойдёт?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Да, если у вас свой бизнес и желание внедрять руками. Ядро сообщества — селлеры, поэтому много разборов про маркетплейсы, но методы одни и те же: база знаний, агенты, автоматизация процессов. В сообществе есть участники из медиа, услуг и производства.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">Чем это отличается от курса по нейросетям?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>У курса есть заранее написанная программа. У нас её нет: участники приносят свои живые задачи и показывают, что внедрили на этой неделе. Мы разбираем то, что происходит сейчас, а не то, что было актуально в момент записи урока.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-text">С чего начать, если я пока ничего не знаю про ИИ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>С одной понятной задачи вашего бизнеса — не нужно изучать все инструменты сразу. Новичкам на встречах помогают, вопросы с нуля здесь нормальны. Путь у большинства один и тот же: разобраться в инструменте, собрать первого помощника, автоматизировать первый процесс. Обычно на это уходит две-четыре недели, но это наблюдение, а не обещание.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 19: Финальный CTA -->
+    <section class="cta-section">
+        <div class="container container--wide">
+            <div class="cta-content">
+                <div class="cta-illustration"></div>
+                <div class="cta-text">
+                    <p class="cta-message">Всё остальное вам расскажет ChatGPT. А сроки, цифры и чужие грабли — только те, кто их прошёл. Созвонимся на 15–20 минут: я отвечу на ваши вопросы, познакомимся и поймём, подходим ли мы друг другу.</p>
+                    <a href="https://t.me/lifeexplorer23" target="_blank" class="btn btn-action">
+                        Познакомиться — 15 минут
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2026 СИИстема · Роман Воробьёв</p>
+                <p class="footer-links">
+                    <!-- TODO Роман: страница политики конфиденциальности -->
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/faq.js" defer></script>
+
+    <!-- FAQ Schema for SEO / AI Search -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Надо ли уметь программировать, чтобы внедрять ИИ в бизнес?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Нет. Участники сообщества СИИстема — предприниматели, не программисты: задачи ИИ-агентам ставятся обычным языком. Разбираться в своём бизнесе — надо, программировать — нет."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Не опасно ли давать ИИ доступ к данным бизнеса?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Доступ дают дозированно: ключи «только чтение», правило «один помощник — одна роль», базовая безопасность сервера. Как внедрять ИИ, не подставляя бизнес, — одна из основных тем встреч сообщества."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Чем сообщество СИИстема отличается от курса по нейросетям?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Курс устаревает быстрее, чем вы его проходите. СИИстема — живая среда практиков: каждую неделю участники показывают свежие внедрения с экрана на актуальных инструментах, а трекинг целей помогает довести внедрение до результата в собственном бизнесе."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Подойдёт ли сообщество не селлеру маркетплейсов?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да, если у вас свой бизнес и желание внедрять ИИ руками. Ядро сообщества — селлеры Ozon и Wildberries, но методы универсальны: база знаний компании, ИИ-агенты, автоматизация процессов."
+                }
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
