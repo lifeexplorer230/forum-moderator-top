@@ -34,3 +34,7 @@
 .meeting-clip-section{padding:40px 0}
 .meeting-clip-player{display:block;width:100%;max-width:900px;margin:28px auto 0;border-radius:var(--border-radius-md);background:#000;box-shadow:0 8px 30px rgba(0,0,0,0.12)}
 .meeting-clip-section .cases-more{text-align:center;margin-top:14px}
+
+.case-shot{margin:18px 0 0}
+.case-shot img{display:block;width:100%;height:auto;border-radius:var(--border-radius-sm);border:1px solid rgba(0,0,0,0.08)}
+.case-shot figcaption{margin-top:8px;font-size:13px;color:var(--color-text-secondary)}
