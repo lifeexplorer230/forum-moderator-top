@@ -262,21 +262,21 @@
     <h2 style="margin: 0 0 40px; font-size: clamp(28px,4.4vw,54px); line-height: 1.08; letter-spacing: -.028em; font-weight: 700;">Трое участников — <span style="color: var(--ac, #C9F14A);">своими словами</span></h2>
     <div style="display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
       <figure style="margin: 0;">
-        <video controls="controls" preload="metadata" playsinline="playsinline" style="width: 100%; border: 1px solid rgba(255,255,255,.1); background: #000;">
+        <video controls="controls" preload="metadata" playsinline="playsinline" style="width: 100%; aspect-ratio: 9/16; height: auto; object-fit: cover; border: 1px solid rgba(255,255,255,.1); background: #000;">
           <source src="https://moderator.top/siistema/media/otzyv-kostya.mp4" type="video/mp4" />
           Ваш браузер не поддерживает видео. <a href="https://moderator.top/siistema/media/otzyv-kostya.mp4">Скачать</a>.
         </video>
         <figcaption style="margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; color: #6F7378; line-height: 1.7;"><span style="color: #C9CDD1;">Константин</span> · EasyLight · гибкое стекло, 13–15 млн ₽/мес</figcaption>
       </figure>
       <figure style="margin: 0;">
-        <video controls="controls" preload="metadata" playsinline="playsinline" style="width: 100%; border: 1px solid rgba(255,255,255,.1); background: #000;">
+        <video controls="controls" preload="metadata" playsinline="playsinline" style="width: 100%; aspect-ratio: 9/16; height: auto; object-fit: cover; border: 1px solid rgba(255,255,255,.1); background: #000;">
           <source src="https://moderator.top/siistema/media/otzyv-alex.mp4" type="video/mp4" />
           Ваш браузер не поддерживает видео. <a href="https://moderator.top/siistema/media/otzyv-alex.mp4">Скачать</a>.
         </video>
         <figcaption style="margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; color: #6F7378; line-height: 1.7;"><span style="color: #C9CDD1;">Александр Б.</span> · селлер Ozon · сервис Seller-Power</figcaption>
       </figure>
 <figure style="margin: 0;">
-        <video controls="controls" preload="metadata" playsinline="playsinline" style="width: 100%; border: 1px solid rgba(255,255,255,.1); background: #000;">
+        <video controls="controls" preload="metadata" playsinline="playsinline" style="width: 100%; aspect-ratio: 9/16; height: auto; object-fit: cover; border: 1px solid rgba(255,255,255,.1); background: #000;">
           <source src="https://moderator.top/siistema/media/otzyv-sergey.mp4" type="video/mp4" />
           Ваш браузер не поддерживает видео. <a href="https://moderator.top/siistema/media/otzyv-sergey.mp4">Скачать</a>.
         </video>
@@ -312,7 +312,7 @@
           <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #6F7378;">Заявка на знакомство</div>
           <label style="display: grid; gap: 7px;">
             <span style="font-size: 13px; color: #9DA1A6;">Имя</span>
-            <input name="name" required="required" type="text" placeholder="Как к вам обращаться" style="background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.14); color: #F4F5F6; padding: 14px 14px; font-size: 15px; border-radius: 2px; outline: none;" style-focus="border-color: var(--ac, #C9F14A);" />
+            <input name="hp" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;"><input name="name" required="required" type="text" placeholder="Как к вам обращаться" style="background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.14); color: #F4F5F6; padding: 14px 14px; font-size: 15px; border-radius: 2px; outline: none;" style-focus="border-color: var(--ac, #C9F14A);" />
           </label>
           <label style="display: grid; gap: 7px;">
             <span style="font-size: 13px; color: #9DA1A6;">Telegram или телефон</span>
@@ -322,7 +322,8 @@
             <span style="font-size: 13px; color: #9DA1A6;">Бизнес и что хотите внедрить</span>
             <textarea name="task" rows="3" placeholder="Пара строк: чем занимаетесь и какая задача" style="background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.14); color: #F4F5F6; padding: 14px; font-size: 15px; border-radius: 2px; outline: none; resize: vertical;" style-focus="border-color: var(--ac, #C9F14A);"></textarea>
           </label>
-          <button type="submit" style="background: var(--ac, #C9F14A); color: #0A0B0C; font-weight: 700; font-size: 16px; padding: 16px 24px; border: 0; border-radius: 2px; cursor: pointer;" class="h1">Познакомиться — 15 минут</button>
+          <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 1.5; color: #9DA1A6; cursor: pointer;"><input name="privacy" type="checkbox" required="required" style="margin-top: 3px; accent-color: #C9F14A; flex: 0 0 auto;"><span>Согласен на обработку персональных данных — имя и контакт нужны, чтобы связаться и договориться о разговоре. <a href="https://moderator.top/siistema/privacy.html" target="_blank" style="color: #C9F14A;">Как мы с ними обращаемся</a></span></label>
+<button type="submit" style="background: var(--ac, #C9F14A); color: #0A0B0C; font-weight: 700; font-size: 16px; padding: 16px 24px; border: 0; border-radius: 2px; cursor: pointer;" class="h1">Познакомиться — 15 минут</button>
           <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.7; color: #55585C;">Берём не всех, и скажем об этом прямо.</p>
         </form>
       </div>
@@ -598,7 +599,7 @@
 <footer style="padding: 40px clamp(18px,5vw,40px) 110px; border-top: 1px solid rgba(255,255,255,.07);">
   <div style="max-width: 1140px; margin: 0 auto; display: flex; gap: 18px; flex-wrap: wrap; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .06em; color: #55585C;">
     <span>© 2026 СИИстема · Роман Воробьёв</span>
-    <a href="#" style="color: #55585C;" class="h7">Политика конфиденциальности</a>
+    <a href="https://moderator.top/siistema/privacy.html" style="color: #55585C;" class="h7">Политика конфиденциальности</a>
   </div>
 </footer>
 
@@ -644,11 +645,24 @@ document.addEventListener('DOMContentLoaded',function(){
   var f=document.getElementById('applyForm');
   if(f) f.addEventListener('submit',function(e){
     e.preventDefault();
-    var d=new FormData(f);
-    var msg='Заявка в СИИстему\n\nИмя: '+(d.get('name')||'')+'\nКонтакт: '+(d.get('contact')||'')+'\nЗадача: '+(d.get('task')||'');
-    window.open('https://t.me/lifeexplorer23?text='+encodeURIComponent(msg),'_blank');
-    document.getElementById('formIdle').setAttribute('hidden','');
-    document.getElementById('formSent').removeAttribute('hidden');
+    var d=new FormData(f), btn=f.querySelector('button[type=submit]');
+    var name=(d.get('name')||'').trim(), contact=(d.get('contact')||'').trim(), task=(d.get('task')||'').trim();
+    if(!name||!contact) return;
+    if((d.get('hp')||'').trim()) return;
+    var payload={name:name, phone:contact, email:'', task:task, source:'siistema', hp:''};
+    var msg='Заявка в СИИстему\n\nИмя: '+name+'\nКонтакт: '+contact+'\nЗадача: '+task;
+    function done(){
+      document.getElementById('formIdle').setAttribute('hidden','');
+      document.getElementById('formSent').removeAttribute('hidden');
+    }
+    function fallback(){ window.open('https://t.me/lifeexplorer23?text='+encodeURIComponent(msg),'_blank'); done(); }
+    if(btn){ btn.disabled=true; btn.textContent='Отправляем…'; }
+    fetch('https://functions.yandexcloud.net/d4eto14ls1nol0q6p1ve',{
+      method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)
+    }).then(function(r){ if(!r.ok) throw new Error('bad'); return r.json(); })
+      .then(function(){ done(); })
+      .catch(function(){ fallback(); })
+      .finally(function(){ if(btn){ btn.disabled=false; btn.textContent='Познакомиться — 15 минут'; } });
   });
   var st=document.getElementById('sticky');
   if(st) window.addEventListener('scroll',function(){

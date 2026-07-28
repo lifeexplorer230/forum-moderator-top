@@ -38,3 +38,5 @@
 .case-shot{margin:18px 0 0}
 .case-shot img{display:block;width:100%;height:auto;border-radius:var(--border-radius-sm);border:1px solid rgba(0,0,0,0.08)}
 .case-shot figcaption{margin-top:8px;font-size:13px;color:var(--color-text-secondary)}
+
+.video-testimonial-player{aspect-ratio:9/16;height:auto;object-fit:cover;background:#000}
